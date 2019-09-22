@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/aivus/docker-bind.svg?style=shield)](https://circleci.com/gh/aivus/docker-bind) [![Docker Repository on Quay.io](https://quay.io/repository/aivus/bind/status "Docker Repository on Quay.io")](https://quay.io/repository/aivus/bind)
+[![Circle CI](https://circleci.com/gh/aivus/docker-bind.svg?style=shield)](https://circleci.com/gh/aivus/docker-bind)
 
 # aivus/bind:9.11.3-20190922
 
