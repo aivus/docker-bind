@@ -7,10 +7,7 @@ metadata:
 spec:
   containers:
     - name: bind
-      image: sameersbn/bind
-      env:
-        - name: WEBMIN_ENABLED
-          value: false
+      image: aivus/bind
       ports:
         - containerPort: 53
           protocol: UDP
