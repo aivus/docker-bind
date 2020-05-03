@@ -1,9 +1,9 @@
-FROM ubuntu:latest
+FROM ubuntu:eoan
 
 LABEL maintainer="ilya@antipenko.pp.ua"
 
 ENV BIND_USER=bind \
-    BIND_VERSION=9.11.3 \
+    BIND_VERSION=9.11.5 \
     DATA_DIR=/data
 
 RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
