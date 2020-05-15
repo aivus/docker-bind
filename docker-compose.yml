@@ -3,7 +3,7 @@ version: '2'
 services:
   bind:
     restart: always
-    image: aivus/bind:9.11.5-20200503
+    image: aivus/bind:9.11.5-20200515
     ports:
       - "53:53/udp"
       - "53:53/tcp"

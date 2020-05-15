@@ -1,6 +1,6 @@
 [![Circle CI](https://circleci.com/gh/aivus/docker-bind.svg?style=shield)](https://circleci.com/gh/aivus/docker-bind)
 
-# aivus/bind:9.11.5-20200503
+# aivus/bind:9.11.5-20200515
 
 - [Introduction](#introduction)
   - [Contributing](#contributing)
@@ -46,7 +46,7 @@ If the above recommendations do not help then [report your issue](../../issues/n
 Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/aivus/bind) and is the recommended method of installation.
 
 ```bash
-docker pull aivus/bind:9.11.5-20200503
+docker pull aivus/bind:9.11.5-20200515
 ```
 
 Alternatively you can build the image yourself.
@@ -63,7 +63,7 @@ Start BIND using:
 docker run --name bind -d --restart=always \
   --publish 53:53/tcp --publish 53:53/udp \
   --volume /srv/docker/bind:/data \
-  aivus/bind:9.11.5-20200503
+  aivus/bind:9.11.5-20200515
 ```
 
 *Alternatively, you can use the sample [docker-compose.yml](docker-compose.yml) file to start the container using [Docker Compose](https://docs.docker.com/compose/)*
@@ -76,7 +76,7 @@ You can customize the launch command of BIND server by specifying arguments to `
 docker run --name bind -it --rm \
   --publish 53:53/tcp --publish 53:53/udp \
   --volume /srv/docker/bind:/data \
-  aivus/bind:9.11.5-20200503 -h
+  aivus/bind:9.11.5-20200515 -h
 ```
 
 ## Persistence
@@ -101,7 +101,7 @@ To upgrade to newer releases:
   1. Download the updated Docker image:
 
   ```bash
-  docker pull aivus/bind:9.11.5-20200503
+  docker pull aivus/bind:9.11.5-20200515
   ```
 
   2. Stop the currently running image:
@@ -121,7 +121,7 @@ To upgrade to newer releases:
   ```bash
   docker run --name bind -d \
     [OPTIONS] \
-    aivus/bind:9.11.5-20200503
+    aivus/bind:9.11.5-20200515
   ```
 
 ## Shell Access
